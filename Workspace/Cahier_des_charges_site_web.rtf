@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue128;}
+{\info
+{\author Beno\'eet Guillou}}\paperw11904\paperh16836\margl1134\margr1134\margb1134\margt1134\vieww12660\viewh17800\viewkind0
+\deftab709
+\pard\pardeftab709\ri-2
+
+\f0\b\fs24 \cf0 Beno\'eet Guillou
+\b0 \
+25 rue de Brest \
+35000 Rennes\
+T\'e9l\'e9phone : 06 35 53 75 33\
+Mail ; {\field{\*\fldinst{HYPERLINK "mailto:guillou.capgreed@gmail.com"}}{\fldrslt \cf2 \ul \ulc0 guillou.capgreed@gmail.com}}\
+\
+\pard\pardeftab709\li2852\ri-2
+\cf0 \'e0 Rennes , le 25 Juillet 2017\
+\pard\pardeftab709\ri-2
+\cf0 \
+	\ul Objet \ulnone : 
+\i Cahier des charges site web multimarques v\'eatements afin de trouver ses tailles\
+                        \'e0 domicile . Le nom du site sera \'ab\'a0Universize\'a0\'bb
+\i0 \
+\
+\pard\pardeftab709\ri-2
+
+\b \cf0 \ul \ulc0 Description globale du projet : \ulnone 	
+\b0 \
+\
+\pard\pardeftab709\ri-2\qj
+\cf0 	Le site internet dont pour l\'92instant le nom reste de determiner , aura pour but de fournir a l\'92utilisateur le moyen de trouver sa taille pour n\'92importe quel v\'eatement dans n\'92importe quelle marque apr\'e8s avoir fourni soit un fichier CAD de son corps soit ses tailles id\'e9ales dans certains v\'eatements ou chaussures de certaines marques , soit ses mensurations ..\
+\
+Le site web comparera avec sa database pour lui trouver sa taille , ce sera le gros noyau du code ;\
+example ;\
+le client rentre que sa taille parfaite pour une paire de nike air max90 est du 44,5 et il veut savoir sa taille pour une paire de chaussures trezeta de montagne \'85\
+Dans le site deux clients chaussent l\'92un du 45 en nike air max90 et du 43,5 en trezeta \
+et l\'92autre du 44 en nike air max90 et du 42,5 en trezeta , => en toute logique un chaussant 44,5 en nike air max90 chaussera du 43 en trezeta \'85\
+\
+\pard\pardeftab709\ri-2
+
+\b \cf0 \ul Langages :
+\b0  \
+\ulnone La base de donn\'e9es sera en mysql ou postgresql , le site sera cod\'e9 sous eclipse avec un moteur en java  \'85 reste a d\'e9terminer les frameworks a utiliser\
+\
+Le site web sera inaccessible sans cr\'e9er un profile personnel ou seront stock\'e9es les tailles de v\'eatements et de chaussures \'85C\'92est une condition n\'e9cessaire afin de g\'e9n\'e9rer une database de taille suffisante afin de pouvoir effectuer les comparaisons entre marques .\
+\
+Une fois logg\'e9 on n\'92aura donc qu\'92une page de garde ou noter quel v\'eatement ou chaussures dont on connait sa taille prendre en reference , et de quel v\'eatement on souhaite avoir l\'92ajustement \'85\
+Pourquoi une seule page , simple , cette page html servira a la fois a rentrer de nouvelles donn\'e9es sur ses tailles , et a faire des comparaisons \'85.Dans un but de simplification du code on n\'92aura donc qu\'92une seule page html modulaire pour effectuer ses deux actions \'85\
+La page web devra aussi contenir un bouton d\'92upload afin de pouvoir a terme hoster un fichier autocad contenant la digitalisation de son profil .\
+\
+\
+
+\b \ul Base SQL :
+\b0 \ulnone \
+\
+Il faudra donc rentrer a la creation du profil son ;\
+-Nom\
+-Pr\'e9nom\
+-Adresse mail \
+-taille en m\'e8tres \
+\
+
+\b section concernant le haut ;
+\b0 \
+\
+-Largeur d\'92\'e9paules\
+-Largeur du torse \
+-Longueur du torse ( du cou aux hanches )\
+-Largeur \'e0 la taille\
+\
+
+\b section concernant le bas ;
+\b0 \
+\
+-Largeur des hanches \
+-Circonf\'e9rence de la cuisse \
+-Longueur de jambe \
+-Circonf\'e9rence au mollet\
+-Circonf\'e9rence de la cheville\
+\
+
+\b section concernant le pied ;
+\b0 \
+\
+-Longueur du pied \
+-Largeur \
+-Circonf\'e9rence au coup de pied \
+\
+
+\b \ul Moteur de comparaison en java li\'e9 a un moteur de recherche elasticsearch afin de trouver automatiquement les item de marques d\'e9j\'e0 pr\'e9sents en base :
+\b0 \ulnone \
+\
+\pard\pardeftab709\ri-2\qj
+\cf0 \
+\pard\pardeftab709\ri-2
+
+\b \cf0 \ul \ulc0 Securit\'e9:
+\b0  \
+\
+\ulnone Dans un premier temps il faudra trouver un moyen de pouvoir detecter les gens qui rentrent des fausses information sur leur taille  afin de faire crasher l\'92algorithme , ainsi que des reviews erron\'e9es sur les vetements .\
+\
+Puis il faudra s\'92occuper de la s\'e9curit\'e9 informatique pure du site afin d\'92\'e9viter le hacking \'85\
+}
